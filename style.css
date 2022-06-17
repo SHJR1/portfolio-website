@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.container {
+    font-family: 'Righteous', cursive;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.card-flip{
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.front h1 {
+    background-color: #B9D1B5;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 5rem;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 2px 5px 10px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.front h1:hover {
+    letter-spacing: 1rem;
+}
+
+.back {
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.boxes div {
+    justify-content: center;
+    align-items: center;
+}
+
+.boxOne {
+    background-color: #eae151;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.backOne {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #eae151;
+    color: #343a40;
+}
+
+.partOne {
+    width: 50%;
+    height: 50%;
+}
+.partTwo {
+    width: 50%;
+    height: 50%;
+}
+
+.partTwo li, .partThree li, .partFour li {
+    margin-left: .5rem;
+    margin-top: .3rem;
+    list-style:none;
+}
+
+.partThree {
+    width: 50%;
+    height: 50%;
+}
+
+.partThree li {
+    margin-left: .5rem;
+    margin-top: .3rem;
+    list-style:none;
+}
+
+.partFour {
+    width: 50%;
+    height: 50%;
+}
+
+.backOne h1 {
+    margin-left: .5rem;
+}
+
+.backOne p{
+    margin: 2rem 0 0 1rem;
+}
+
+.backOne i {
+    color: #f89d25;
+    margin-right: .6rem;
+}
+
+div h3 {
+    margin: 1.7rem 0 0 3rem;
+    text-decoration: underline;
+}
+
+.boxTwo {
+    background-color: #6096BA;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.backTwo {
+    background-color: #6096BA;
+    color: #F6F7F8;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.backTwoPartOne, .backTwoPartTwo {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: #343a40;
+}
+
+.backTwoPartOne a, .backTwoPartOne a{
+    padding: 1rem;
+}
+
+.backTwoPartOne {
+    background-color: #6096BA;
+}
+
+.backTwoPartTwo {
+    background-color: #61a5c2;
+}
+
+.backFour h1 {
+    color: #343a40;
+    text-align: center;
+}
+.backFourPartOne {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    height: 70%;
+    font-size:x-large;
+}
+
+
+a {
+    text-decoration: none;
+    color: #274C77;
+}
+
+a:hover {
+    color: white;
+}
+
+.boxThree {
+    background-color: #FF5833;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.backThree {
+    background-color: #FF5833;
+}
+
+.boxFour {
+    background-color: #6bbf59;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.backGreen {
+    background-color: #6bbf59;
+}
+
+@media screen and (max-width: 750px) {
+    .boxes {
+        flex-wrap: wrap;
+    }
+
+    .boxOne, .boxTwo, .boxThree, .boxFour {
+        width: 100%;
+        height: 50vh;
+    }
+}
