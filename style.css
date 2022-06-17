@@ -80,10 +80,12 @@ body {
 .partOne {
     width: 50%;
     height: 50%;
+    background-color: #87a70a;
 }
 .partTwo {
     width: 50%;
     height: 50%;
+    background-color: #fdd85d;
 }
 
 .partTwo li, .partThree li, .partFour li {
@@ -95,6 +97,7 @@ body {
 .partThree {
     width: 50%;
     height: 50%;
+    background-color: #fdd85d;
 }
 
 .partThree li {
@@ -106,6 +109,7 @@ body {
 .partFour {
     width: 50%;
     height: 50%;
+    background-color: #87a70a;
 }
 
 .backOne h1 {
